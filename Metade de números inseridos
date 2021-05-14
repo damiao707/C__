@@ -1,0 +1,47 @@
+# include <stdio.h>
+# include <conio.h>
+# include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+int i;
+float n[15];
+for(i=0;i<15;i++){
+	printf("Digite um número ");
+	scanf("%f",&n[i]);
+}
+for(i=0;i<15;i++){
+n[i]=n[i]/2;
+printf("A metado do valor digitado é %.2f\n",n[i]);
+}
+	getch();
+	return 0;
+}
+
+ou
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<locale.h>
+
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+
+	float v[4], half;
+	int i;
+	
+	for (i=0;i<4;i++){
+	printf("Digite um número real: ");
+	scanf("%f",&v[i]);
+}
+
+	for(i=0;i<4;i++) {
+	
+	half = v[i]/2;
+	printf("\nA metade de %.1f é %.1f\n", v[i], half);
+	
+	}
+
+	return 0;
+}
